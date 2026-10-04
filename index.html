@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Megan and Mathews</title>
+<title>Megan and Mathews Dayhome</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 </head>
 <body>
+<script src="script.js"></script>
+<script type="text/javascript">
+(function(){
+      emailjs.init({
+        publicKey: "UQ6thx4-_Qyksjc_a",
+      });
+})();
+</script>
+
+
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-green w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
     <a href="#location" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOCATION</a>
      <a href="#courses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSES</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -30,7 +43,7 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#location" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOCATION</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 </div>
@@ -42,45 +55,57 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="img1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>MEGAN & MATHEW</h3>
-      <p><b>Test verden text</b></p>   
+      <h3>M&M Dayhome</h3>
+      <p><b>Our Day Home</b></p>   
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="img2.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-dark-grey w3-padding-32 w3-hide-small">
-      <h3>MEGAN & MATHEW</h3>
-      <p><b>Denver is HERE.</b></p>    
+      <h3>M&M Dayhome</h3>
+      <p><b>Our Day Home</b></p>    
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="img3.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>MEGAN & MATHEW</h3>
-      <p><b>Under development.</b></p>    
+      <h3>M&M Dayhome</h3>
+      <p><b>Our Day Home</b></p>    
     </div>
   </div>
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">SCHOOL</h2>
-    <p class="w3-opacity"><i>Idk what to put here</i></p>
-    <p class="w3-justify">Test Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">Our Day Home</h2>
+    <p class="w3-opacity"><i>Book a Tour</i></p>
+    <p class="w3-justify"> Looking for a warm, loving, and fun place for your little one? 💕 Come see what M&M Dayhome is all about! 🌸 Book a tour and experience our program, meet us, and see our happy little learning space. 🧸✨.</p>
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
-        <p>Name</p>
+        <p>M&M Dayhome</p>
         <img src="img4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
       </div>
       <div class="w3-third">
-        <p>Name</p>
+        <p>M&M Dayhome</p>
         <img src="img5.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
       </div>
       <div class="w3-third">
-        <p>Name</p>
+        <p>M&M Dayhome</p>
         <img src="img6.jpg" class="w3-round" alt="Random Name" style="width:60%">
       </div>
+      <div>
+    </div>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">About M&M Dayhome </h2>
+    <p class="w3-justify"> Welcome to M&M Dayhome!
+
+Founded in 2015, M&M Dayhome was born from a personal miracle. When my daughter Megan was two and struggling to speak, I opened a play-based dayhome, believing that friendship would help her find her voice. Within just one month of active peer play, her speech completely bloomed!
+
+Today, our dayhome is proudly named after my two children, Megan and Matthew. They are the reason I wake up every single morning excited to work, support our community, and inspire others.
+
+We know firsthand that play is essential for healthy child development. It constructs critical brain pathways, nurtures deep social skills, and unlocks physical potential. We bring this exact heart-centered, science-backed approach to your children every single day.</p>
+    <div class="w3-row w3-padding-32">
+      <div>
     </div>
   </div>
 
@@ -196,12 +221,12 @@ body {font-family: "Lato", sans-serif}
 <script>
 (function () {
   const photos = [
-    { src: "img5.jpg", title: "test" },
-    { src: "image7.jpg", title: "Test" },
-    { src: "img8.jpg", title: "test" },
-    { src: "img9.jpg", title: "test" },
-    { src: "img10.jpg", title: "test" },
-    { src: "img11.jpg", title: "test" },
+    { src: "img5.jpg", title: "M&M Dayhome" },
+    { src: "image7.jpg", title: "M&M Dayhome" },
+    { src: "img8.jpg", title: "M&M Dayhome" },
+    { src: "img9.jpg", title: "M&M Dayhome" },
+    { src: "img10.jpg", title: "M&M Dayhome" },
+    { src: "img11.jpg", title: "M&M Dayhome" },
   ];
 
   const ring = document.getElementById('ring');
@@ -308,44 +333,28 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Courses -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="courses">
-    <h2 class="w3-wide w3-left">COURSES</h2>
+    <h2 class="w3-left">Daycare and family day home fees</h2>
   <div>
     <div>
-      <p class="w3-padding-32 w3-center" style="margin-top:40px;">3 - 6 Months</p>
+      <p class="w3-padding-32 w3-center" style="margin-top:10px;"></p>
       </div>
-    <p class="w3-justify">Test Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div>
-      <p class="w3-padding-32">7 - 9 Months</p>
-      </div>
-      <p class="w3-justify">Test Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">If your child is kindergarten age or younger and attends a licensed daycare or family day home that receives affordability funding, you will pay a flat parent fee:</p>
+      <p class="w3-justify">$326.25 per month for full-time care (100 or more hours per month)</p>
+       <p class="w3-justify">$230 per month for part-time care (50 to 99 hours per month)</p>
     </div>
+    <h2 class="w3-left">Operational Hours</h2>
     <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="img4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="img5.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="img6.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      <p class="w3-justify">Monday-Friday 7:00 AM- 5:30 PM</p>
+      <p class="w3-justify">Saturday-Sunday - Closed</p>
       </div>
     </div>
   </div>
 
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="location">
     <h2 class="w3-wide">OUR Location</h2>
-    <p class="w3-opacity"><i>Idk what to put here</i></p>
+    <p class="w3-opacity"><i>Where our Dayhome is</i></p>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56758.165754819995!2d122.51994511175941!3d10.735375100813494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aefb100a030273%3A0x5f62c25dc28cca4d!2sIloilo%20Supermart!5e1!3m2!1sen!2sph!4v1789557657160!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
-
-</iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2276.342341681432!2d-114.08778048834772!3d50.9155740536478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717428d2ae816d%3A0xe37444d3b7064c44!2s184%20Millbank%20Dr%20SW%2C%20Calgary%2C%20AB%20T2Y%202H9%2C%20Canada!5e1!3m2!1sen!2sph!4v1791112973216!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
     </div>
   </div>
@@ -386,25 +395,28 @@ body {font-family: "Lato", sans-serif}
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <p class="w3-opacity w3-center"><i>Test!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> 184 Millbank Drive SW<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 587 4341208<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: pam_deedee2000@yahoo.com<br>
       </div>
+      <form onsubmit="return false">
       <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name" required>
             </div>
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" id="email" required>
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="message" required>
+           <input class="w3-input w3-border" type="text" placeholder="Your Contact Number" required name="Number" id="number" required>
+          </div>
+          <div>
+          <button class="w3-button w3-black w3-section w3-right" type="submit" onclick="sendmail(event)">SEND</button>
         </form>
       </div>
     </div>
