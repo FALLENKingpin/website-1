@@ -45,6 +45,7 @@ body {font-family: "Lato", sans-serif}
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#location" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOCATION</a>
+    <a href="#courses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSES</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 </div>
 
@@ -109,13 +110,16 @@ We know firsthand that play is essential for healthy child development. It const
     </div>
   </div>
 
-
+<!-- Carousel-->
   <div>
 <style class="w3-center">
-  .carousel-wrap {
+ .carousel-wrap {
     position: relative;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    height: 60vw;          /* scales with width */
+    max-height: 500px;
+    min-height: 260px;     /* floor so it doesn't get too squished */
     margin: 0 auto;
     background: var(--bg);
     color: var(--fg);
@@ -124,7 +128,7 @@ We know firsthand that play is essential for healthy child development. It const
     -webkit-user-select: none;
     user-select: none;
     color-scheme: light;
-  }
+}
   * { box-sizing: border-box; }
 
 
